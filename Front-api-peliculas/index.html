@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Catálogo de Películas</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>🎬 Catálogo de Películas</h1>
+
+    <!-- Mensajes de éxito / error para el usuario -->
+    <div id="mensaje" class="mensaje" role="alert" hidden></div>
+
+    <!-- Formulario para Crear / Editar -->
+    <form id="form-pelicula" class="card">
+      <h2 id="form-titulo">Agregar Película</h2>
+      
+      <!-- Campo oculto para almacenar el ID cuando editamos -->
+      <input type="hidden" id="pelicula-id" />
+
+      <div class="form-group">
+        <input type="text" id="titulo" placeholder="Título de la película" required />
+      </div>
+
+      <div class="form-group">
+        <input type="text" id="genero" placeholder="Género (ej. Ciencia Ficción)" required />
+      </div>
+
+      <div class="form-group">
+        <input type="number" id="anio" placeholder="Año de estreno" min="1888" max="2030" required />
+      </div>
+
+      <div class="form-group">
+        <input type="text" id="director" placeholder="Director" required />
+      </div>
+
+      <div class="form-group">
+        <input type="number" id="calificacion" placeholder="Calificación (0 - 10)" min="0" max="10" step="0.1" required />
+      </div>
+
+      <div class="actions">
+        <button type="submit" id="btn-guardar" class="btn btn-primary">Guardar Película</button>
+        <button type="button" id="btn-cancelar" class="btn btn-secondary" style="display: none;">Cancelar</button>
+      </div>
+    </form>
+
+    <!-- Listado de Películas -->
+    <h2>Listado</h2>
+    <ul id="lista-peliculas" class="grid-lista"></ul>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
