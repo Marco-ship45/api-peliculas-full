@@ -10,7 +10,7 @@ app.use(express.json());
 app.use('/api/peliculas', peliculasRoutes);
 
 app.get('/', (req, res) => {
-  res.send('API de Películas funcionando 🎬');
+  res.send('API de Películas funcionando');
 });
 
 // Rutas no encontradas

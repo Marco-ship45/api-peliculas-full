@@ -1,4 +1,4 @@
-# 🎬 API de Películas (Backend)
+# API de Películas (Backend)
 
 API REST para gestionar un catálogo de películas, construida con **Node.js, Express y MongoDB (Mongoose)** y organizada con el patrón **MVC**.
 

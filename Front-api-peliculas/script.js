@@ -77,7 +77,7 @@ const renderizar = (peliculas) => {
     genero.textContent = pelicula.genero;
 
     const detalle = document.createElement('p');
-    detalle.textContent = `Director: ${pelicula.director} | Calificación: ⭐ ${pelicula.calificacion}/10`;
+    detalle.textContent = `Director: ${pelicula.director} | Calificación: ${pelicula.calificacion}/10`;
 
     const acciones = document.createElement('div');
     acciones.className = 'actions';

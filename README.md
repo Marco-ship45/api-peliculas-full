@@ -1,4 +1,4 @@
-# 🎬 API de Películas + Frontend
+# API de Películas + Frontend
 
 Práctica full stack: una **API REST** con Node.js, Express y MongoDB (patrón MVC) y un **frontend en JavaScript Vanilla** que la consume con un CRUD completo.
 

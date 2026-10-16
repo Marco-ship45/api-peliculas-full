@@ -1,4 +1,4 @@
-# 🎬 Catálogo de Películas (Frontend)
+# Catálogo de Películas (Frontend)
 
 Interfaz web en **JavaScript Vanilla** que consume la [API de Películas](../api-peliculas) para listar, crear, editar y eliminar películas.
 
